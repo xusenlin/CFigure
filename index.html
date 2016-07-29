@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0;
+			margin: 0;
+		}
+
+		.cfigure{
+			position: relative;
+			overflow: hidden;
+			margin: 0;
+			padding: 0;
+		}
+		.cfigure-photo{
+			margin: 0;
+			padding: 0;
+			position: absolute;
+			left: 0;
+			list-style-type: none;
+			transition: all 0.4s;
+		}
+		.cfigure-photo-li{
+			margin: 0;
+			padding: 0;
+			float: left;
+		}
+		.cfigure-photo-a{
+			margin: 0;
+			padding: 0;
+			font-size: 0;
+		}
+		.cfigure-img{
+			margin: 0;
+			padding: 0;
+			width: 100%;
+			height: auto;
+		}
+		.cfigure-point{
+			position: absolute;
+			transition: all 0.4s;
+			list-style-type: none;
+			left: 36px;
+			bottom: 26px;
+			height: 11px;
+
+		}
+		.cfigure-point-li{
+			cursor: pointer;
+			float: left;
+			width: 11px;
+			height: 11px;
+			margin-right: 10px;
+			border-radius: 50%;
+			background: #9f9fa0;
+			border: 2px solid #9f9fa0;
+		}
+		.cfigure-point .active,.cfigure-point-li:hover {
+			background: #dc1716;
+			border: 2px solid #bcbbbb;
+		}
+	</style>
+</head>
+<body >
+	<div id="cf">
+	</div>
+	<br><br><br><br><br>
+	<div id="hh"></div>
+	<script src="CFigure.js"></script>
+<script>
+	CFigure.config({
+		"id":"cf",
+		"with":1170,
+		"height":510,
+		"time":2000,
+		"img":{
+			"1图片描述":["img/1.jpg","http://localhost/wordpress/"],
+			"2图片描述":["img/2.jpg","http://localhost/wordpress/"],
+			"3图片描述":["img/3.jpg","http://localhost/wordpress/"],
+			"4图片描述":["img/4.jpg","http://localhost/wordpress/"]
+		}
+	});
+	CFigure.init();
+	CFigure.config({
+		"id":"hh",
+		"with":810,
+		"height":360,
+		"time":1000,
+		"img":{
+			"1图片描述":["img/3.jpg","http://localhost/wordpress/"],
+			"2图片描述":["img/2.jpg","http://localhost/wordpress/"],
+			"3图片描述":["img/1.jpg","http://localhost/wordpress/"],
+			"4图片描述":["img/4.jpg","http://localhost/wordpress/"]
+		}
+	});
+	CFigure.init();
+</script>
+</body>
+</html>
