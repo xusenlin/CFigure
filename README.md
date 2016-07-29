@@ -1,1 +1,26 @@
-# CFigure
+CFigure.config({
+		"id":"cf",
+		"with":1170,
+		"height":510,
+		"time":2000,
+		"img":{
+			"1图片描述":["img/1.jpg","http://localhost/wordpress/"],
+			"2图片描述":["img/2.jpg","http://localhost/wordpress/"],
+			"3图片描述":["img/3.jpg","http://localhost/wordpress/"],
+			"4图片描述":["img/4.jpg","http://localhost/wordpress/"]
+		}
+	});
+	CFigure.init();
+	CFigure.config({
+		"id":"hh",
+		"with":810,
+		"height":360,
+		"time":1000,
+		"img":{
+			"1图片描述":["img/3.jpg","http://localhost/wordpress/"],
+			"2图片描述":["img/2.jpg","http://localhost/wordpress/"],
+			"3图片描述":["img/1.jpg","http://localhost/wordpress/"],
+			"4图片描述":["img/4.jpg","http://localhost/wordpress/"]
+		}
+	});
+	CFigure.init();
